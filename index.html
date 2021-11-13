@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Invoice || DIVINE Made</title>
+<!-- Favicon Link Starts Here -->
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+<!-- Favicon Link Ends Here -->
+<!-- CSS Link Starts Here -->
+<link rel="stylesheet" href="assets/css/default.css"/>
+<link rel="stylesheet" href="assets/css/theme.css"/>
+<!-- CSS Link Ends Here -->    
+</head>
+<body>
+
+<!-- Top Header Starts Here -->
+<section class="tob-header">
+    <div class="solid-bar">
+        <div class="solid-bar-one"></div>
+        <div class="solid-bar-two"></div> 
+        <div class="solid-bar-three"></div> 
+        <div class="solid-bar-four"></div> 
+    </div>
+    <div class="container">
+        <div class="tob-header-area">
+            <div class="tob-header-area-start">
+                <a href="index.html" class="logo">
+                    Devine Made
+                </a>
+            </div>
+            <div class="tob-header-area-end">
+                <h3>Invoice</h3>
+                <p><strong>Invoice No - </strong> #123456</p>
+                <p><strong>Account No - </strong> 12345678910</p>
+                <p><strong>Invoice Date - </strong> 14th November, 2021</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Top Header Ends Here -->
+
+<!--  Invoice Info Starts Here -->
+<section class="invoice-info">
+    <div class="container">
+        <div class="invoice-info-area">
+            <div class="invoice-info-content">
+                <h5 style="text-transform: uppercase;">Invoice To,</h5>
+                <h4>John Doe</h4>
+                <p>Managing Director, Company LTD</p>
+                <p><strong>Phone</strong> - 01234567891</p>
+                <p><strong>Email</strong> - companyltd@gmail.com</p>
+            </div>
+            <div class="invoice-info-content">
+                <h5>Payment Method</h5>
+                <p><strong>Account No</strong> - 12345678910</p>
+                <p><strong>Account Name</strong> - John Doe</p>
+                <p><strong>Branch Name</strong> - ABYZ</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  Invoice Info Ends Here -->
+
+<!--  Invoice Table Starts Here -->
+<section class="invoice-table">
+    <table border="3">
+        <thead>
+            <tr>
+                <th style="width: 250px;">Product name</th>
+                <th>Product Price</th>
+                <th>Product Quantity</th>
+                <th>Total Price</th>
+                <th style="width: 110px;">Add Row</th>
+            </tr>
+        </thead>
+        
+        <tbody id="res">
+            <tr>
+                <td id="td1"></td>
+                <td> 
+                    <input type="number" bitm="1" id="price1" onkeyup="adjustTotalPrice(this)"/>
+                </td>
+                <td> 
+                    <input type="number" bitm="1" onkeyup="setTotalPrice(this)" id="qty1"/>
+                </td>
+                <td>
+                    <input type="text" readonly id="total1" class="item-total-price"/>
+                </td>
+                <td><button type="button" id='addBtn' class="add-btn"> + </button></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4"><p>Total Price</p></td>
+                <td id="grandTotal"></td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+<!--  Invoice Table Ends Here -->
+
+<!-- Terms Area Starts Here -->
+<section class="terms-area">
+    <div class="container">
+        <div class="terms-area-main">
+            <div class="terms-area-start">
+                <h4>Terms & Conditions - </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="terms-area-end">
+                <img src="assets/images/shape/signature.png" alt="Sign" width="90px">
+                <hr/>
+                <h4>Your Name & Signature</h4>
+                <p>Account Manager</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Terms Area Ends Here -->
+
+<!-- Footer Starts Here -->
+<footer>
+    <p>Copyright &copy; Devine Made</p>
+</footer>
+<!-- Footer Ends Here -->
+
+<!-- Script Files Link Starts Here -->
+<script src="assets/script/jquery.js"></script>
+<script src="assets/script/script.js"></script>
+<!-- Script Files Link Ends Here -->
+</body>
+</html>

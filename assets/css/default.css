@@ -1,0 +1,64 @@
+/* Theme Default CSS Starts Here */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+::selection {
+	background: #1C0C5B;
+	color: #fff;
+}
+
+ol,
+ul {
+	list-style-type: none;
+	margin: 0px;
+}
+
+img {
+	vertical-align: middle;
+	border: 0;
+}
+a{
+	display: inline-block;
+}
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+a,
+button,
+select {
+	cursor: pointer;
+	transition: 0.3s all linear;
+}
+select:focus,
+button:focus,
+a:focus {
+    outline: 0;
+}
+.primary-color{
+	color: #df1a2e;
+}
+/* Theme Default CSS Ends Here */
